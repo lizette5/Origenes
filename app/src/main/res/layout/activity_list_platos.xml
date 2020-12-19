@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/perucomida"
+    tools:context=".ListPlatos">
+
+    <TextView
+        android:id="@+id/tituloMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="TEXTO DE PRUEBA"
+        android:layout_margin="15dp"
+        android:textSize="23dp"
+        android:fontFamily="casual"/>
+    <TextView
+        android:id="@+id/elecciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="TEXTO DE PRUEBA"
+
+        android:textSize="10dp"
+        android:fontFamily="casual"/>
+    <Button
+        android:id="@+id/listar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listar"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recicletPlatos"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@android:color/transparent"
+        android:scrollbars="vertical"
+        />
+
+    <Button
+        android:id="@+id/ButtonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"/>
+</LinearLayout>
